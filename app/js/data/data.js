@@ -1,3 +1,0 @@
-const daa = {
-    name: 'Sam'
-}

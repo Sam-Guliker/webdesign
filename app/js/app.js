@@ -1,4 +1,4 @@
-import introduction from './modules/introduction'
+import {introduction} from './modules/introduction.js'
 
 (function() {
     'use strict'

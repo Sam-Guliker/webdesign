@@ -1,6 +1,6 @@
 'use strict';
 
-var _introduction = require('./modules/introduction');
+var _introduction = require('./modules/introduction.js');
 
 (function () {
     'use strict';

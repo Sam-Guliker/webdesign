@@ -1,9 +1,10 @@
-import {data} from './data/data'
-import {h} from 'virtual-dom/h'
+const h = require('virtual-dom/h');
+import {data} from './data/data.js'
+
 
 export const introduction = {
-    init: function(){
-            return h('.greeting', ['Hello ' + data.name])
+    init(){
+        return h('.greeting', ['Hello ' + data.name])
     }
 }
 

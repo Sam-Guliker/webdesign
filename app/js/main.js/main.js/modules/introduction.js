@@ -3,23 +3,14 @@
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
+exports.introduction = undefined;
 
-var _data = require('./data/data.js');
-
-var _data2 = _interopRequireDefault(_data);
+var _data = require('./data/data');
 
 var _h = require('virtual-dom/h');
 
-var _h2 = _interopRequireDefault(_h);
-
-function _interopRequireDefault(obj) {
-    return obj && obj.__esModule ? obj : { default: obj };
-}
-
-var introduction = {
+var introduction = exports.introduction = {
     init: function init() {
-        return (0, _h2.default)('.greeting', ['Hello ' + _data2.default.name]);
+        return (0, _h.h)('.greeting', ['Hello ' + _data.data.name]);
     }
 };
-
-exports.default = introduction;
