@@ -1,0 +1,10 @@
+* {
+  box-sizing: border-box; }
+
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+body {
+  background: #2e2e2e;
+  font-size: 16px; }
