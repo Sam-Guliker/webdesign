@@ -1,0 +1,39 @@
+{
+  "name": "webdesign",
+  "version": "1.0.0",
+  "description": "A project for webdesign",
+  "main": "app.js",
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sam-Guliker/webdesign.git"
+  },
+  "author": "Sam Guliker",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sam-Guliker/webdesign/issues"
+  },
+  "homepage": "https://github.com/Sam-Guliker/webdesign#readme",
+  "dependencies": {
+    "babelify": "^8.0.0",
+    "browser-sync": "^2.24.5",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-ruby-sass": "^3.0.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-uglify": "^3.0.0",
+    "node-notifier": "^5.2.1",
+    "reactify": "^1.1.1",
+    "uglify": "^0.1.5",
+    "vinyl-buffer": "^1.0.1",
+    "vinyl-source-stream": "^2.0.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-es2015": "^6.24.1",
+    "browserify": "^16.2.2"
+  }
+}
