@@ -1,10 +1,6 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass');
 const browserSync = require('browser-sync').create();
-const uglify = require('gulp-uglify');
-const useref = require('gulp-useref');
-const cssnano = require('gulp-cssnano');
-const gulpIf = require('gulp-if');
 const babel = require('gulp-babel')
 
 gulp.task('sass', function () {
@@ -24,21 +20,12 @@ gulp.task('browserSync', () => {
   })
 })
 
-gulp.task('useref', () => {
-  return gulp.src('app/*.html')
-    .pipe(useref())
-    .pipe(gulpIf('*.js', uglify()))
-    // Minifies only if it's a CSS file
-    .pipe(gulpIf('*.css', cssnano()))
-    .pipe(gulp.dest('dist'))
-});
-
-gulp.task('default', ['browserSync', 'sass', 'useref'], () => {
+gulp.task('default', ['browserSync', 'sass',], () => {
   gulp.watch('app/scss/**/*.scss', ['sass']);
   gulp.watch('app/*.html', browserSync.reload);
   gulp.watch('app/js/**/*.js', browserSync.reload);
 
-  return gulp.src('spp/js/**/*.js')
+  return gulp.src('app/js/**/*.js')
   .pipe(babel())
-  .pipe(gulp.dest('dist'));
+  .pipe(gulp.dest('app/js/main.js'));
 });
