@@ -5,7 +5,8 @@ import { routes } from './modules/routes.js'
 
     const app = {
         init() {
-            virtualDom.init()
+            console.log('hallo?')
+            routes.init()
         }
     }
     app.init()

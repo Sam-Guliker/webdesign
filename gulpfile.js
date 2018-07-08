@@ -4,6 +4,7 @@ const browserSync = require('browser-sync').create();
 const sourcemaps = require('gulp-sourcemaps');
 const babel = require('gulp-babel');
 const concat = require('gulp-concat');
+const jsx = require('gulp-jsx');
 
 gulp.task('sass', function () {
   return gulp.src('app/scss/**/*.scss') // Gets all files ending with .scss in app/scss
@@ -14,7 +15,7 @@ gulp.task('sass', function () {
     }))
 });
 
-gulp.task('browserSync', () => {
+gulp.task('browserSync', function(){
   browserSync.init({
     server: {
       baseDir: 'app'
@@ -22,17 +23,16 @@ gulp.task('browserSync', () => {
   })
 })
 
-gulp.task('default', ['browserSync', 'sass',], () => {
-  gulp.watch('app/scss/**/*.scss', ['sass']);
-  gulp.watch('app/*.html', browserSync.reload);
-  gulp.watch('app/**/**/*.js', browserSync.reload);
-
-  gulp.src('./**/**/*.js')
-    .pipe(sourcemaps.init())
-    .pipe(babel({
-      presets: ['env']
+gulp.task('build', function() {
+  return gulp.src('app/modules/**/*.js')
+    .pipe(jsx({
+      factory: 'h'
     }))
-    .pipe(concat('all.js'))
-    .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest('dist'))
+    .pipe(gulp.dest('dist'));
+});
+
+gulp.task('default', ['browserSync', 'sass','build'], function() {
+  gulp.watch('app/scss/**/*.scss', ['sass']);
+  gulp.watch('app/*.html');
+  gulp.watch('app/**/**/*.js');
 });

@@ -1,5 +1,5 @@
 import { introduction } from './introduction.js'
-import { virtualDom } from './virtualDom.jsx'
+import { virtualDom } from './virtualDom.js'
 
 export const routes = {
     init(){
