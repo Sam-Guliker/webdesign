@@ -1,7 +1,9 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass');
 const browserSync = require('browser-sync').create();
-const babel = require('gulp-babel')
+const sourcemaps = require('gulp-sourcemaps');
+const babel = require('gulp-babel');
+const concat = require('gulp-concat');
 
 gulp.task('sass', function () {
   return gulp.src('app/scss/**/*.scss') // Gets all files ending with .scss in app/scss
@@ -23,9 +25,14 @@ gulp.task('browserSync', () => {
 gulp.task('default', ['browserSync', 'sass',], () => {
   gulp.watch('app/scss/**/*.scss', ['sass']);
   gulp.watch('app/*.html', browserSync.reload);
-  gulp.watch('app/js/**/*.js', browserSync.reload);
+  gulp.watch('app/**/**/*.js', browserSync.reload);
 
-  return gulp.src('app/js/**/*.js')
-  .pipe(babel())
-  .pipe(gulp.dest('app/js/main.js'));
+  gulp.src('./**/**/*.js')
+    .pipe(sourcemaps.init())
+    .pipe(babel({
+      presets: ['env']
+    }))
+    .pipe(concat('all.js'))
+    .pipe(sourcemaps.write('.'))
+    .pipe(gulp.dest('dist'))
 });
