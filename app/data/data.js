@@ -1,3 +1,3 @@
-const daa = {
+const data = {
     name: 'Sam'
 }

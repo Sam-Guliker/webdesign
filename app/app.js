@@ -1,11 +1,12 @@
-import {introduction} from './modules/introduction.js'
+import { routes } from './modules/routes.js'
 
-(function() {
+(function () {
     'use strict'
+
     const app = {
         init() {
-            introduction.init()
+            routes.init
         }
     }
-    app.init
+    app.init()
 })()
