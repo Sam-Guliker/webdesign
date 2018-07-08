@@ -1,10 +1,11 @@
 import { introduction } from './introduction.js'
+import { tryingOut } from '../vendors/virtualDom.js'
 
 export const routes = {
     init: (
         routie({
             '': () => {
-                introduction.init
+                virtualDom.init
             },
             'principles': () => {
                 introduction.init

@@ -30,7 +30,7 @@ gulp.task('default', ['browserSync', 'sass',], () => {
   gulp.src('./**/**/*.js')
     .pipe(sourcemaps.init())
     .pipe(babel({
-      presets: ['@babel/env']
+      presets: ['env']
     }))
     .pipe(concat('all.js'))
     .pipe(sourcemaps.write('.'))
