@@ -5,7 +5,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.introduction = undefined;
 
-var _data = require('./data/data');
+var _data = require('./data/data.jsc');
 
 var h = require('virtual-dom/h');
 var introduction = exports.introduction = {

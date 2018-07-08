@@ -1,19 +1,13 @@
 'use strict';
 
-var _introduction = require('./modules/introduction');
-
-var _introduction2 = _interopRequireDefault(_introduction);
-
-function _interopRequireDefault(obj) {
-    return obj && obj.__esModule ? obj : { default: obj };
-}
+var _introduction = require('./modules/introduction.js');
 
 (function () {
     'use strict';
 
     var app = {
         init: function init() {
-            _introduction2.default.init();
+            _introduction.introduction.init();
         }
     };
     app.init;

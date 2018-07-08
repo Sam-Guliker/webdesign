@@ -1,5 +1,8 @@
 'use strict';
 
-var daa = {
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+var data = exports.data = {
     name: 'Sam'
 };
