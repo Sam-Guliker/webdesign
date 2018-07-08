@@ -1,5 +1,5 @@
 const h = require('virtual-dom/h');
-import {data} from './data/data.js'
+import {data} from './data/data.jsc'
 
 
 export const introduction = {
