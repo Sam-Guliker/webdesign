@@ -5,6 +5,12 @@ export const routes = {
         routie({
             '': () => {
                 introduction.init
+            },
+            'principles': () => {
+                introduction.init
+            },
+            'principles:id': () => {
+                introduction.init
             }
         })
     )
