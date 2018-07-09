@@ -42,7 +42,8 @@ ul {
   box-sizing: border-box; }
 
 .container {
-  margin: 1.75rem; }
+  margin: 1.75rem;
+  animation: 0.3s slidein ease-in-out forwards; }
   @media (min-width: 48rem) {
     .container {
       width: 33.75rem;
@@ -58,7 +59,7 @@ ul {
       .container .btn {
         text-align: initial;
         display: inline-block;
-        margin-top: 3.125rem; } }
+        margin-top: 2.125rem; } }
     .container .btn:hover, .container .btn:focus {
       transition: 0.4s all ease-in-out;
       background: #FF4D61;
@@ -75,9 +76,6 @@ ul {
 .img-size {
   display: block;
   width: 100%; }
-  @media (min-width: 48rem) {
-    .img-size {
-      width: 30%; } }
 
 main {
   display: flex;
@@ -86,3 +84,11 @@ main {
 
 ul li h2 {
   font-size: 2em; }
+
+@keyframes slidein {
+  from {
+    opacity: 0;
+    transform: matrix(1, 0, 0, 1, 20, 0); }
+  to {
+    opacity: 1;
+    transform: matrix(1, 0, 0, 1, 0, 0); } }

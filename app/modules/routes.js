@@ -1,15 +1,19 @@
-import { introduction } from './introduction.js'
-import { list } from './list.js'
+const { hyper } = hyperHTML
+
+import app from './navigate-app.js'
+import Introduction from './introduction.js'
+import Principles from './list.js'
+
+const page = {
+    introduction: new Introduction,
+    principles: new Principles
+  };
 
 export const routes = {
     init() {
-        routie({
-            '': () => {
-                introduction.init()
-            },
-            'principles': () => {
-                list.init()
-            }
-        })
+        app.get('/', () => hyper(document.body)`${page.introduction}`);
+        app.get('/principles', () => hyper(document.body)`${page.principles}`);
+        app.navigate('/');
+        
     }
 }

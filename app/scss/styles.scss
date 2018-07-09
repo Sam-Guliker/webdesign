@@ -14,6 +14,7 @@
 
 .container {
     margin: 1.75rem;
+    animation: 0.3s slidein ease-in-out forwards;
     @media (min-width: $media-tablet) {
         width: 33.75rem;
         margin: auto;
@@ -28,7 +29,7 @@
         @media(min-width: $media-tablet) {
             text-align: initial;
             display: inline-block;
-            margin-top: 3.125rem;
+            margin-top: 2.125rem;
         }
         &:hover,
         &:focus {
@@ -49,9 +50,7 @@
 .img-size {
     display: block;
     width: 100%;
-    @media(min-width: $media-tablet) {
-        width:30%;
-    }
+
 }
 main {
     display: flex;
@@ -60,4 +59,14 @@ main {
 }
 ul li h2 {
     font-size: 2em;
+}
+@keyframes slidein {
+    from {
+        opacity: 0;
+        transform: matrix(1, 0, 0, 1, 20, 0);
+    }
+    to {
+        opacity: 1;
+        transform: matrix(1, 0, 0, 1, 0, 0);
+    }
 }

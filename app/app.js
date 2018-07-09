@@ -5,7 +5,6 @@ import { routes } from './modules/routes.js'
 
     const app = {
         init() {
-            console.log('hallo?')
             routes.init()
         }
     }
