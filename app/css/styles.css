@@ -1,6 +1,88 @@
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Josefin Slab", serif; }
+
+h1 {
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 3.3125rem; }
+  @media (min-width: 48rem) {
+    h1 {
+      font-size: 4rem;
+      font-weight: 400;
+      line-height: 4.8125rem; } }
+
+p, input, label, button, a {
+  font-family: "Roboto", sans-serif; }
+
+p {
+  padding-top: 1.125rem;
+  line-height: 1.25rem;
+  font-weight: 100;
+  line-height: 1.25rem; }
+  @media (min-width: 48rem) {
+    p {
+      padding-top: 2.125rem;
+      line-height: 1.5rem; } }
+
+a {
+  font-weight: 100;
+  text-decoration: none; }
+
+ul {
+  list-style-type: none;
+  margin: 0; }
+
 * {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box; }
 
 *::before,
 *::after {
   box-sizing: border-box; }
+
+.container {
+  margin: 1.75rem; }
+  @media (min-width: 48rem) {
+    .container {
+      width: 33.75rem;
+      margin: auto; } }
+  .container .btn {
+    display: inline-block;
+    margin-top: 1.25rem;
+    color: #141414;
+    padding: 18px 20px;
+    border-radius: 2rem;
+    border: 1px solid #141414; }
+    @media (min-width: 48rem) {
+      .container .btn {
+        text-align: initial;
+        display: inline-block;
+        margin-top: 3.125rem; } }
+    .container .btn:hover, .container .btn:focus {
+      transition: 0.4s all ease-in-out;
+      background: #FF4D61;
+      border: 1px solid #fff;
+      color: #fff;
+      outline: 0; }
+
+.fa-chevron-right {
+  margin-left: 8px; }
+
+.hidden {
+  display: none; }
+
+.img-size {
+  display: block;
+  width: 100%; }
+  @media (min-width: 48rem) {
+    .img-size {
+      width: 30%; } }
+
+main {
+  display: flex;
+  width: 100vw;
+  height: 100vh; }
+
+ul li h2 {
+  font-size: 2em; }

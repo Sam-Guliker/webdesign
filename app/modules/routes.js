@@ -9,9 +9,6 @@ export const routes = {
             },
             'principles': () => {
                 list.init()
-            },
-            'principles:id': () => {
-                introduction.init
             }
         })
     }

@@ -1,0 +1,33 @@
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Josefin Slab", serif; }
+
+h1 {
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 3.3125rem; }
+  @media (min-width: 48rem) {
+    h1 {
+      font-size: 4rem;
+      font-weight: 400;
+      line-height: 4.8125rem; } }
+
+p, input, label, button, a {
+  font-family: "Roboto", sans-serif; }
+
+p {
+  padding-top: 1.125rem;
+  line-height: 1.25rem;
+  font-weight: 100;
+  line-height: 1.25rem; }
+  @media (min-width: 48rem) {
+    p {
+      padding-top: 2.125rem;
+      line-height: 1.5rem; } }
+
+a {
+  font-weight: 100;
+  text-decoration: none; }
+
+ul {
+  list-style-type: none;
+  margin: 0; }
