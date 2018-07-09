@@ -1,15 +1,14 @@
 import { introduction } from './introduction.js'
-import { virtualDom } from './virtualDom.jsx'
+import { list } from './list.js'
 
 export const routes = {
-    init(){
+    init() {
         routie({
             '': () => {
-                virtualDom.init()
+                introduction.init()
             },
             'principles': () => {
-                console.log(v)
-                introduction.init
+                list.init()
             },
             'principles:id': () => {
                 introduction.init

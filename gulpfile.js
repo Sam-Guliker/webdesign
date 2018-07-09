@@ -3,8 +3,6 @@ const sass = require('gulp-sass');
 const browserSync = require('browser-sync').create();
 const sourcemaps = require('gulp-sourcemaps');
 const babel = require('gulp-babel');
-const concat = require('gulp-concat');
-const jsx = require('gulp-jsx');
 
 gulp.task('sass', function () {
   return gulp.src('app/scss/**/*.scss') // Gets all files ending with .scss in app/scss
@@ -15,7 +13,7 @@ gulp.task('sass', function () {
     }))
 });
 
-gulp.task('browserSync', function(){
+gulp.task('browserSync', function () {
   browserSync.init({
     server: {
       baseDir: 'app'
@@ -23,16 +21,8 @@ gulp.task('browserSync', function(){
   })
 })
 
-gulp.task('build', function() {
-  return gulp.src('app/modules/**/*.js')
-    .pipe(jsx({
-      factory: 'h'
-    }))
-    .pipe(gulp.dest('dist'));
-});
-
-gulp.task('default', ['browserSync', 'sass','build'], function() {
+gulp.task('default', ['browserSync', 'sass'], function () {
   gulp.watch('app/scss/**/*.scss', ['sass']);
-  gulp.watch('app/*.html');
-  gulp.watch('app/**/**/*.js');
+  gulp.watch('app/*.html', browserSync.reload);
+  gulp.watch('app/**/**/*.js', browserSync.reload);
 });
