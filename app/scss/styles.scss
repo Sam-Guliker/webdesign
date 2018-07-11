@@ -63,7 +63,7 @@
         }
     }
     li section {
-        display: flex;
+        display: block;
         max-height: 0;
         overflow: hidden;
         margin:0 1em;
@@ -71,10 +71,16 @@
         @media (min-width: $media-tablet) {
             margin: 0 14vw;
         }
+        @media (min-width: $media-desktop) {
+            display: flex;
+        }
         div {
             @media (min-width: $media-desktop) {
                 max-width: 50%;
                 margin-right: 3rem;
+            }
+            .context-padding {
+                padding-top: 1rem;
             }
         }
     }
@@ -97,9 +103,12 @@
 }
 
 .container.list li section.selected {
+    max-height: 600px;
     @media (min-width: $media-tablet) {
-        margin-bottom: 2vw;
-        max-height: 370px;
+        max-height: 850px;
+    }
+    @media (min-width: $media-desktop) {
+        max-height: 420px;
     }
 }
 
