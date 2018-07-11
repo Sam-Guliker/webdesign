@@ -22,10 +22,9 @@
     .btn {
         display: inline-block;
         margin-top: 1.25rem;
-        color:$font-color;
         padding: 18px 20px;
         border-radius: $border-radius;
-        border: 1px solid $font-color;
+        border: 1px solid $font-base;
         @media(min-width: $media-tablet) {
             text-align: initial;
             display: inline-block;
@@ -41,25 +40,93 @@
         }
     }
 }
+
+.container.list {
+    @media (min-width: $media-tablet) {
+        width: 100%;
+        margin: auto;
+    }
+    a {
+        display: block;
+        font-weight: 100;
+        transition: 0.4s all ease;
+        font-family: $font-text;
+        &:hover,
+        &:focus{
+            transform: matrix(1, 0, 0, 1, 0, 0);
+            outline: 0;
+        }
+        &:hover h2,
+        &:focus h2 {
+            color: $headline-base;
+            transition: 0.3s color ease;
+        }
+    }
+    li section {
+        display: flex;
+        max-height: 0;
+        overflow: hidden;
+        margin:0 1em;
+        transition: (max-height 0.4s ease-out);
+        @media (min-width: $media-tablet) {
+            margin: 0 14vw;
+        }
+        div {
+            @media (min-width: $media-desktop) {
+                max-width: 50%;
+                margin-right: 3rem;
+            }
+        }
+    }
+    li h2 {
+        transition: 0.4 color ease;
+        color:$off-focus;
+        font-size: 2rem;
+        margin: 2rem 1rem;
+        cursor: pointer;
+        @media (min-width: $media-tablet) {
+            font-size: 10vw;
+            margin: 14vw;
+            margin-bottom: 2vw;
+        }
+    }
+}
+
 .fa-chevron-right {
     margin-left: 8px;
 }
-.hidden {
+
+.container.list li section.selected {
+    @media (min-width: $media-tablet) {
+        margin-bottom: 2vw;
+        max-height: 300px;
+    }
+}
+
+.notSelected {
     display: none;
 }
+
 .img-size {
     display: block;
     width: 100%;
-
+    margin-top: 1.25rem;
+    margin-bottom: 0;
 }
 main {
     display: flex;
     width: 100vw;
     height: 100vh;
 }
-ul li h2 {
-    font-size: 2em;
+
+.container.list a.inline-block {
+    display: inline-block;
 }
+
+.container.list li h2.selected {
+    margin-bottom: 2vw;
+}
+
 @keyframes slidein {
     from {
         opacity: 0;
@@ -70,3 +137,27 @@ ul li h2 {
         transform: matrix(1, 0, 0, 1, 0, 0);
     }
 }
+#box {
+    background-color: rgba(40, 40, 190, 255);
+    border: 4px solid rgb(20, 20, 120);
+    transition: background-color 1s, border 1s;
+    width: 350px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  .vertical {
+    color: white;
+    font: 32px "Arial";
+  }
+  
+  .extra {
+    width: 350px;
+    height: 350px;
+    margin-top: 10px;
+    border: 4px solid rgb(20, 20, 120);
+    text-align: center;
+    padding: 20px;
+  }

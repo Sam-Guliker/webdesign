@@ -1,5 +1,6 @@
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Josefin Slab", serif; }
+  font-family: "Josefin Slab", serif;
+  color: #141414; }
 
 h1 {
   font-size: 3rem;
@@ -12,22 +13,40 @@ h1 {
       line-height: 4.8125rem; } }
 
 p, input, label, button, a {
+  color: #4D5456;
   font-family: "Roboto", sans-serif; }
 
 p {
   padding-top: 1.125rem;
   line-height: 1.25rem;
   font-weight: 100;
-  line-height: 1.25rem; }
+  line-height: 1.25rem;
+  color: #4D5456; }
   @media (min-width: 48rem) {
     p {
       padding-top: 2.125rem;
-      line-height: 1.5rem; } }
+      line-height: 1.5rem;
+      font-size: 1.2rem;
+      line-height: 1.6; } }
 
 a {
+  color: #4D5456;
   font-weight: 100;
   text-decoration: none; }
 
 ul {
   list-style-type: none;
   margin: 0; }
+
+h3 {
+  margin-top: 1.4rem;
+  font-size: 1.75rem; }
+  @media (min-width: 48rem) {
+    h3 {
+      margin-top: 2rem; } }
+
+h2 {
+  line-height: auto; }
+  @media (min-width: 80rem) {
+    h2 {
+      line-height: 1.2; } }

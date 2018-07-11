@@ -1,5 +1,6 @@
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Josefin Slab", serif; }
+  font-family: "Josefin Slab", serif;
+  color: #141414; }
 
 h1 {
   font-size: 3rem;
@@ -12,25 +13,43 @@ h1 {
       line-height: 4.8125rem; } }
 
 p, input, label, button, a {
+  color: #4D5456;
   font-family: "Roboto", sans-serif; }
 
 p {
   padding-top: 1.125rem;
   line-height: 1.25rem;
   font-weight: 100;
-  line-height: 1.25rem; }
+  line-height: 1.25rem;
+  color: #4D5456; }
   @media (min-width: 48rem) {
     p {
       padding-top: 2.125rem;
-      line-height: 1.5rem; } }
+      line-height: 1.5rem;
+      font-size: 1.2rem;
+      line-height: 1.6; } }
 
 a {
+  color: #4D5456;
   font-weight: 100;
   text-decoration: none; }
 
 ul {
   list-style-type: none;
   margin: 0; }
+
+h3 {
+  margin-top: 1.4rem;
+  font-size: 1.75rem; }
+  @media (min-width: 48rem) {
+    h3 {
+      margin-top: 2rem; } }
+
+h2 {
+  line-height: auto; }
+  @media (min-width: 80rem) {
+    h2 {
+      line-height: 1.2; } }
 
 * {
   padding: 0;
@@ -51,10 +70,9 @@ ul {
   .container .btn {
     display: inline-block;
     margin-top: 1.25rem;
-    color: #141414;
     padding: 18px 20px;
     border-radius: 2rem;
-    border: 1px solid #141414; }
+    border: 1px solid #4D5456; }
     @media (min-width: 48rem) {
       .container .btn {
         text-align: initial;
@@ -67,23 +85,77 @@ ul {
       color: #fff;
       outline: 0; }
 
+@media (min-width: 48rem) {
+  .container.list {
+    width: 100%;
+    margin: auto; } }
+
+.container.list a {
+  display: block;
+  font-weight: 100;
+  transition: 0.4s all ease;
+  font-family: "Roboto", sans-serif; }
+  .container.list a:hover, .container.list a:focus {
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    outline: 0; }
+  .container.list a:hover h2,
+  .container.list a:focus h2 {
+    color: #141414;
+    transition: 0.3s color ease; }
+
+.container.list li section {
+  display: flex;
+  max-height: 0;
+  overflow: hidden;
+  margin: 0 1em;
+  transition: max-height 0.4s ease-out; }
+  @media (min-width: 48rem) {
+    .container.list li section {
+      margin: 0 14vw; } }
+  @media (min-width: 80rem) {
+    .container.list li section div {
+      max-width: 50%;
+      margin-right: 3rem; } }
+
+.container.list li h2 {
+  transition: 0.4 color ease;
+  color: #B9C6CA;
+  font-size: 2rem;
+  margin: 2rem 1rem;
+  cursor: pointer; }
+  @media (min-width: 48rem) {
+    .container.list li h2 {
+      font-size: 10vw;
+      margin: 14vw;
+      margin-bottom: 2vw; } }
+
 .fa-chevron-right {
   margin-left: 8px; }
 
-.hidden {
+@media (min-width: 48rem) {
+  .container.list li section.selected {
+    margin-bottom: 2vw;
+    max-height: 300px; } }
+
+.notSelected {
   display: none; }
 
 .img-size {
   display: block;
-  width: 100%; }
+  width: 100%;
+  margin-top: 1.25rem;
+  margin-bottom: 0; }
 
 main {
   display: flex;
   width: 100vw;
   height: 100vh; }
 
-ul li h2 {
-  font-size: 2em; }
+.container.list a.inline-block {
+  display: inline-block; }
+
+.container.list li h2.selected {
+  margin-bottom: 2vw; }
 
 @keyframes slidein {
   from {
@@ -92,3 +164,26 @@ ul li h2 {
   to {
     opacity: 1;
     transform: matrix(1, 0, 0, 1, 0, 0); } }
+
+#box {
+  background-color: #2828be;
+  border: 4px solid #141478;
+  transition: background-color 1s, border 1s;
+  width: 350px;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px; }
+
+.vertical {
+  color: white;
+  font: 32px "Arial"; }
+
+.extra {
+  width: 350px;
+  height: 350px;
+  margin-top: 10px;
+  border: 4px solid #141478;
+  text-align: center;
+  padding: 20px; }
