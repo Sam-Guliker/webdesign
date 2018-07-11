@@ -17,15 +17,15 @@ const data = [
         id: '3',
         name: '3. Conserve attention at all costs',
         explain: 'We live in a world of interruption. It\'s hard to read in peace anymore without something trying to distract us and direct our attention elsewhere. Attention is precious. Don\'t litter the side of your applications with distractible material…remember why the screen exists in the first place. If someone is reading let them finish reading before showing that advertisement (if you must). Honor attention and not only will your readers be happier, your results will be better. When use is the primary goal, attention becomes the prerequisite. Conserve it at all costs.',
-        imgExplain: '../images/affordance-example.png',
-        context: ''
+        imgExplain: '../images/attention.gif',
+        context: 'When you read something important and suddenly there are popups. This is a no-go!'
     },
     {
         id: '4',
         name: '4. Keep users in control',
         explain: 'Humans are most comfortable when they feel in control of themselves and their environment. Thoughtless software takes away that comfort by forcing people into unplanned interactions, confusing pathways, and surprising outcomes. Keep users in control by regularly surfacing system status, by describing causation (if you do this that will happen) and by giving insight into what to expect at every turn. Don\'t worry about stating the obvious…the obvious almost never is.        ',
-        imgExplain: '../images/affordance-example.png',
-        context: ''
+        imgExplain: '../images/control.gif',
+        context: 'You want to keep the user in control. When you click on something, don\'t want the opposite'
     },
     {
         id: '5',
@@ -73,8 +73,8 @@ const data = [
         id: '11',
         name: '14. Progressive disclosure',
         explain: 'Show only what is necessary on each screen. If people are making a choice, show enough information to allow them the choice, then dive into details on a subsequent screen. Avoid the tendency to over-explain or show everything all at once. When possible, defer decisions to subsequent screens by progressively disclosing information as necessary. This will keep your interactions more clear.    ',
-        imgExplain: '../images/affordance-example.png',
-        context: ''
+        imgExplain: '../images/disclosure.gif',
+        context: 'By clicking on the first option you will get more options. This way the task does not become too complex and the user only gets more options when he/she is interested.'
     },
     {
         id: '12',
