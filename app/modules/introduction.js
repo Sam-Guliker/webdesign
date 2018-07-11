@@ -17,7 +17,7 @@ class Introduction extends hyper.Component {
                 It feels vague and it doesn’t really show how the web actually uses the principles
                 to make it a beter place for everyone.
             </p>
-            <a class='btn' href='#' onclick=${this.click}> Read more about the principles <i class='fa fa-chevron-right' aria-hidden='true'></i></a>
+            <a class='btn' href='' onclick=${this.click}> Read more about the principles <i class='fa fa-chevron-right' aria-hidden='true'></i></a>
             </div>
         </main>
         `

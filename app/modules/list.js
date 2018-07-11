@@ -46,7 +46,7 @@ class Principles extends hyper.Component {
                     <div>
                         <h3>Example: </h3>
                         <img class='img-size' src='${item.imgExplain}' />
-                        <a href='#' class='btn inline-block'> Another example link <i class='fa fa-chevron-right' aria-hidden='true'></i></a>
+                        <a href='https://codepen.io/' target='blank'class='btn inline-block'> Another example link <i class='fa fa-chevron-right' aria-hidden='true'></i></a>
                     </div>                   
                 </section>
                 </li>`)

@@ -3,13 +3,13 @@ const data = [
         id: '1',
         name: '1. Clarity is job',
         explain: 'Clarity is the first and most important job of any interface. To be effective using an interface you\'ve designed, people must be able to recognize what it is, care about why they would use it,understand what the interface is helping them interact with, predict what will happen when they use it, and then successfully interact with it. While there is room for mystery and delayed gratification in interfaces, there is no room for confusion. Clarity inspires confidence and leads to further use. One hundred clear screens is preferable to a single cluttered one.',
-        imgExplain: '../images/affordance-example.png'
+        imgExplain: '../images/clarity.png'
     },
     {
         id: '2',
         name: '2. Interfaces exist to enable interaction',
         explain: 'Interfaces exist to enable interaction between humans and our world. They can help clarify, illuminate, enable, show relationships, bring us together, pull us apart, manage our expectations, and give us access to services. The act of designing interfaces is not Art. Interfaces are not monuments unto themselves. Interfaces do a job and their effectiveness can be measured. They are not just utilitarian, however. The best interfaces can inspire, evoke, mystify, and intensify our relationship with the world.',
-        imgExplain: '../images/affordance-example.png'
+        imgExplain: '../images/interface.png'
     },
     {
         id: '3',
@@ -26,26 +26,26 @@ const data = [
     {
         id: '5',
         name: '5. Direct manipulation is best',
-        explain: 'The best interface is none at all, when we are able to directly manipulate the physical objects in our world. Since this is not always possible, and objects are increasingly informational, we create interfaces to help us interact with them. It is easy to add more layers than necessary to an interface, creating overly-wrought buttons, chrome, graphics, options, preferences, windows, attachments, and other cruft so that we end up manipulating UI elements instead of what\'s important. Instead, strive for that original goal of direct manipulation…design an interface with as little a footprint as possible, recognizing as much as possible natural human gestures. Ideally, the interface is so slight that the user has a feeling of direct manipulation with the object of their focus.',
-        imgExplain: '../images/affordance-example.png'
+        explain: 'The best interface is none at all, when we are able to directly manipulate the physical objects in our world. Since this is not always possible, and objects are increasingly informational, we create interfaces to help us interact with them. It is easy to add more layers than necessary to an interface, creating overly-wrought buttons, chrome, graphics, options, preferences, windows, attachments, and other cruft so that we end up manipulating UI elements instead of what\'s important. Instead, strive for that original goal of direct manipulation…design an interface with as little a footprint as possible,recognizing as much as possible natural human gestures. Ideally, the interface is so slight that the user has a feeling of direct manipulation with the object of their focus.',
+        imgExplain: '../images/direct-manipulation.png'
     },
     {
         id: '6',
         name: '6. One primary action per screen',
         explain: 'Every screen we design should support a single action of real value to the person using it. This makes it easier to learn, easier to use, and easier to add to or build on when necessary. Screens that support two or more primary actions become confusing quickly. Like a written article should have a single, strong thesis, every screen we design should support a single, strong action that is its raison d\'etre.',
-        imgExplain: '../images/affordance-example.png'
+        imgExplain: '../images/primary.png'
     },
     {
         id: '7',
         name: '10. Consistency matters',
         explain: 'Screen elements should not appear consistent with each other unless they behave consistently with each other. Elements that behave the same should look the same. But it is just as important for unlike elements to appear unlike (be inconsistent) as it is for like elements to appear consistent. In an effort to be consistent novice designers often obscure important differences by using the same visual treatment (often to re-use code) when different visual treatment is appropriate.',
-        imgExplain: '../images/affordance-example.png'
+        imgExplain: '../images/consistincy.png'
     },
     {
         id: '8',
         name: '11. Strong visual hierarchies work best',
         explain: 'A strong visual hierarchy is achieved when there is a clear viewing order to the visual elements on a screen. That is, when users view the same items in the same order every time. Weak visual hierarchies give little clue about where to rest one\'s gaze and end up feeling cluttered and confusing. In environments of great change it is hard to maintain a strong visual hierarchy because visual weight is relative: when everything is bold, nothing is bold. Should a single visually heavy element be added to a screen, the designer may need to reset the visual weight of all elements to once again achieve a strong hierarchy. Most people don\'t notice visual hierarchy but it is one of the easiest ways to strengthen (or weaken) a design.',
-        imgExplain: '../images/affordance-example.png'
+        imgExplain: '../images/strong.png'
     },
     {
         id: '9',
@@ -57,7 +57,7 @@ const data = [
         id: '10',
         name: '13. Highlight don’t determine with color',
         explain: 'The color of physical things changes as light changes. In the full light of day we see a very different tree than one outlined against a sunset. As in the physical world, where color is a many-shaded thing, color should not determine much in an interface. It can help, be used for highlighting, be used to guide attention, but should not be the only differentiator of things. For long-reading or extended screen hours, use light or muted background colors, saving brighter hues for your accent colors. Of course there is a time for vibrant background colors as well, just be sure that it is appropriate for your audience.',
-        imgExplain: '../images/affordance-example.png'
+        imgExplain: '../images/highlight.png'
     },
     {
         id: '11',
@@ -69,7 +69,7 @@ const data = [
         id: '12',
         name: '16. A crucial moment: the zero state',
         explain: 'The first time experience with an interface is crucial, yet often overlooked by designers. In order to best help our users get up to speed with our designs, it is best to design for the zero state, the state in which nothing has yet occurred. This state shouldn\'t be a blank canvas…it should provide direction and guidance for getting up to speed. Much of the friction of interaction is in that initial context…once people understand the rules they have a much higher likelihood of success.',
-        imgExplain: '../images/affordance-example.png'
+        imgExplain: '../images/zero.png'
     },
 
 ]
