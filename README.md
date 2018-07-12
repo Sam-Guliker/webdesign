@@ -9,12 +9,12 @@ For this topic I have to look at who the users are and create an exclusive websi
 * [Testing](#testing)
     * [test-results](#test-results)
 * [Principles of User Interface Design](#principles-of-user-interface-design)
-    * [2. Interfaces exist to enable interaction](#2.-interfaces-exist-to-enable-interaction)
-    * [3. Conserve attention at all costs](#3.-conserve-attention-at-all-costs)
-    * [10. Consistency matters](#10-consistency-matters)
-    * [11. Strong visual hierarchies work best](11.-strong-visual-hierarchies-work-best)
-    * [13. Highlight don’t determine with color](13.-hiehglight-don't-determine-with-color)
-    * [14. Progressive Disclosure](14.-progressive-desclosure)
+    * 2. Interfaces exist to enable interaction
+    * 3. Conserve attention at all costs
+    * 10. Consistency matters
+    * 11. Strong visual hierarchies work best
+    * 13. Highlight don’t determine with color
+    * 14. Progressive Disclosure
 * [Conclusion Webdesign](#conculsion-webdesign)
 * [Web app from scratch](#web-app-from-scratch)
     * [HyperHTML](#hyperhtml)
