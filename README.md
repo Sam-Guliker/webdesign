@@ -3,11 +3,10 @@ For this topic I have to look at who the users are and create an exclusive websi
 
 # Table of Content
 * [Getting started](#getting-started)
-* [Introduction](#introduction)
 * [Users](#users)
 * [User Scenario](#user-scenario)
 * [Testing](#testing)
-    * [test-results](#test-results)
+    * [Test results](#test-results)
 * [Principles of User Interface Design](#principles-of-user-interface-design)
     * 2. Interfaces exist to enable interaction
     * 3. Conserve attention at all costs
