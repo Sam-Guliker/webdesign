@@ -12,12 +12,12 @@ For this topic I have to look at who the users are and create an exclusive websi
 * [Testing](#testing)
     * [Test results](#test-results)
 * [Principles of User Interface Design](#principles-of-user-interface-design)
-    * 2. Interfaces exist to enable interaction
-    * 3. Conserve attention at all costs
-    * 10. Consistency matters
-    * 11. Strong visual hierarchies work best
-    * 13. Highlight don’t determine with color
-    * 14. Progressive Disclosure
+    * #2. Interfaces exist to enable interaction
+    * #3. Conserve attention at all costs
+    * #10. Consistency matters
+    * #11. Strong visual hierarchies work best
+    * #13. Highlight don’t determine with color
+    * #14. Progressive Disclosure
 * [Conclusion Webdesign](#conculsion-webdesign)
 * [Web app from scratch](#web-app-from-scratch)
     * [HyperHTML](#hyperhtml)
@@ -108,7 +108,8 @@ the minor web development but the style is very much based on
 minimalism, and I think there could be an extra layer of style  
 over it to make it feel more exclusive.
 
-Guidelines are helpful, but with good design there are also enough reasons to __break__ the rules.
+Guidelines are helpful, but you can also __break__ the rules.  
+__ONLY BREAK THE RULES WHEN YOU KNOW THE RULES__
 
 # Web app from scratch
 To complement the web app from scratch, I chose to make it more  

@@ -11,8 +11,8 @@ const page = {
 
 export const routes = {
     init() {
-        app.get('https://sam-guliker.github.io/webdesign/app/index.html', () => hyper(document.body) `${page.introduction}`);
+        app.get('/', () => hyper(document.body) `${page.introduction}`);
         app.get('/principles', () => hyper(document.body) `${page.principles}`);
-        app.navigate('https://sam-guliker.github.io/webdesign/app/index.html');
+        app.navigate('/');
     }
 }
