@@ -51,6 +51,7 @@
         font-weight: 100;
         transition: 0.4s all ease;
         font-family: $font-text;
+
         &:hover,
         &:focus{
             transform: matrix(1, 0, 0, 1, 0, 0);
@@ -60,6 +61,7 @@
         &:focus h2 {
             color: $headline-base;
             transition: 0.3s color ease;
+            transform: matrix(1.05, 0, 0, 1.05, 0, 0);
         }
     }
     li section {
@@ -88,7 +90,7 @@
         }
     }
     li h2 {
-        transition: 0.4 color ease;
+        transition: 0.4s transform ease-in-out;
         color:$off-focus;
         font-size: 2rem;
         margin: 2rem 1rem;

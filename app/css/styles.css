@@ -101,7 +101,8 @@ h2 {
   .container.list a:hover h2,
   .container.list a:focus h2 {
     color: #141414;
-    transition: 0.3s color ease; }
+    transition: 0.3s color ease;
+    transform: matrix(1.05, 0, 0, 1.05, 0, 0); }
 
 .container.list li section {
   display: block;
@@ -125,7 +126,7 @@ h2 {
     padding-top: 1rem; }
 
 .container.list li h2 {
-  transition: 0.4 color ease;
+  transition: 0.4s transform ease-in-out;
   color: #B9C6CA;
   font-size: 2rem;
   margin: 2rem 1rem;
