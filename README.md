@@ -1,13 +1,21 @@
 # Webdesign
 For this topic I have to look at who the users are and create an exclusive website for them.
 
-# Users: 
-Larissa
-Everything Web studenten.
+# Table of Content
+* [Getting started](#getting-started)
+* [Introduction](#introduction)
+* [Users](#users)
+* [User Scenario](#user-scenario)
+* [Testing](#testing)
+    * [test-results](#test)
 
-# User Scenarios
-* Larissa has a limited vision, in order to build a good website for her the website must be well structured.
-* I want to make sure that topics of principles of user interface design are clear to students of the everything web minor and do not remain vague.
+# Users: 
+Everything Web students.
+
+# User Scenario
+I want to make sure that topics of principles of user interface  
+design are clear to students of the everything web minor, the principles   
+do not remain vague.
 
 # Testing
 I've tested with my minor students.
@@ -31,5 +39,6 @@ make the text more readable.
 This is due to the margins that have to be adjusted and there is no animation on the content block.
 
 ### Vincent
+> EImage only examples do not work properly.
 
-### Chana
+Vincent is right, it is handy to add a description.
