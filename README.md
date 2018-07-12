@@ -92,14 +92,7 @@ same size, making the website look peaceful.
 Through the layout and font size, the user is easily guided through the web page.
 
 ## 13. Highlight don’t determine with color
-I use color and size to attract attention on the website. I do this by using the css matrix.
-The css matrix wil help you reach high fps animations.
-
-source: https://medium.com/outsystems-experts/how-to-achieve-60-fps-animations-with-css3-db7b98610108
-
-```css
-    transform: matrix(1, 0, 0, 1, 0, 0);
-```
+I use color and size to attract attention on the website. I do this by using the `box-shadow`.
 
 ## 14. Progressive Disclosure
 By using progressive disclosure I ensure that the user only sees more  
@@ -114,6 +107,8 @@ is more of a CMD like feel. It is now aimed at
 the minor web development but the style is very much based on  
 minimalism, and I think there could be an extra layer of style  
 over it to make it feel more exclusive.
+
+Guidelines are helpful, but with good design there are also enough reasons to __break__ the rules.
 
 # Web app from scratch
 To complement the web app from scratch, I chose to make it more  
