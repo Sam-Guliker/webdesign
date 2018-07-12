@@ -20,7 +20,7 @@ For this topic I have to look at who the users are and create an exclusive websi
     * [HyperHTML](#hyperhtml)
     * [Sass](#sass)
     * [Learning Process](#learning-process)
-    * [Wishlist](#wish-list)
+    * [Wishlist](#wishlist)
     * [Conclusion](#conclusion)
 
 # Getting Started
