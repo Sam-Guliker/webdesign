@@ -13,7 +13,7 @@ For this topic I have to look at who the users are and create an exclusive websi
     * [10. Consistency matters](#10-consistency-matters)
     * [11. Strong visual hierarchies work best](11-strong-visual-hierarchies-work-best)
     * [13. Highlight don’t determine with color](13-highlight-don't-determine-with-color)
-    * [14. Progressive Disclosure](14.-progressive-desclosure)
+    * [14. Progressive Disclosure](14-progressive-disclosure)
 * [Conclusion Webdesign](#conculsion-webdesign)
 * [Web app from scratch](#web-app-from-scratch)
     * [HyperHTML](#hyperhtml)
