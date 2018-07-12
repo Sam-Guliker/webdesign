@@ -1,6 +1,7 @@
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Josefin Slab", serif;
-  color: #141414; }
+  font-family: "Oswald", sans-serif;
+  color: #141414;
+  text-shadow: -2px 3px 0px #FDCA42; }
 
 h1 {
   font-size: 3rem;
@@ -40,7 +41,8 @@ ul {
 
 h3 {
   margin-top: 1.4rem;
-  font-size: 1.75rem; }
+  font-size: 1.75rem;
+  text-shadow: none; }
   @media (min-width: 48rem) {
     h3 {
       margin-top: 2.3rem; } }
@@ -68,22 +70,35 @@ h2 {
       width: 33.75rem;
       margin: auto; } }
   .container .btn {
-    display: inline-block;
+    overflow: hidden;
+    display: block;
+    position: relative;
     margin-top: 1.25rem;
     padding: 18px 20px;
-    border-radius: 2rem;
     border: 1px solid #4D5456; }
     @media (min-width: 48rem) {
       .container .btn {
         text-align: initial;
         display: inline-block;
-        margin-top: 2.125rem; } }
-    .container .btn:hover, .container .btn:focus {
-      transition: 0.4s all ease-in-out;
-      background: #FF4D61;
-      border: 1px solid #fff;
-      color: #fff;
-      outline: 0; }
+        margin-top: 2.125rem; }
+        .container .btn::before, .container .btn::after {
+          background: #fff;
+          content: '';
+          position: absolute;
+          z-index: -1; }
+        .container .btn::after {
+          background-color: #FDCA42;
+          height: 100%;
+          left: -35%;
+          top: 0;
+          transform: skew(50deg);
+          transition-duration: 0.6s;
+          transform-origin: top left;
+          width: 0; }
+        .container .btn:hover:after, .container .btn:focus:after {
+          height: 100%;
+          width: 135%;
+          color: #fff; } }
 
 @media (min-width: 48rem) {
   .container.list {
@@ -96,13 +111,11 @@ h2 {
   transition: 0.4s all ease;
   font-family: "Roboto", sans-serif; }
   .container.list a:hover, .container.list a:focus {
-    transform: matrix(1, 0, 0, 1, 0, 0);
     outline: 0; }
   .container.list a:hover h2,
   .container.list a:focus h2 {
     color: #141414;
-    transition: 0.3s color ease;
-    transform: matrix(1.05, 0, 0, 1.05, 0, 0); }
+    text-shadow: -10px 10px 0px #FDCA42; }
 
 .container.list li section {
   display: block;
@@ -126,10 +139,11 @@ h2 {
     padding-top: 1rem; }
 
 .container.list li h2 {
-  transition: 0.4s transform ease-in-out;
+  transition: 0.3s text-shadow ease;
   color: #B9C6CA;
   font-size: 2rem;
   margin: 2rem 1rem;
+  text-shadow: none;
   cursor: pointer; }
   @media (min-width: 48rem) {
     .container.list li h2 {

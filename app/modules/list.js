@@ -47,7 +47,7 @@ class Principles extends hyper.Component {
                         <h3>Example:</h3>
                         <p class="context-padding">${item.context}</p>
                         <img class='img-size' src='${item.imgExplain}' />
-                        <a href='https://codepen.io/' target='blank'class='btn inline-block'> Another example link <i class='fa fa-chevron-right' aria-hidden='true'></i></a>
+                        <a href='https://principles.design/examples/principles-of-user-interface-design' target='blank'class='btn inline-block'> Another example <i class='fa fa-chevron-right' aria-hidden='true'></i></a>
                     </div>                   
                 </section>
                 </li>`)

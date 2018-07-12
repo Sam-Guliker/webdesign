@@ -3,6 +3,7 @@
 h1, h2, h3, h4, h5, h6 {
     font-family: $font-stack;
     color: $headline-base;
+    text-shadow: -2px 3px 0px $highlight-color;
 }
 h1 {
     font-size: 3rem;
@@ -47,6 +48,7 @@ ul {
 h3 {
     margin-top: 1.4rem;
     font-size: 1.75rem;
+    text-shadow: none;
     @media(min-width: $media-tablet) {
         margin-top: 2.3rem;
     }

@@ -20,23 +20,39 @@
         margin: auto;
     }
     .btn {
-        display: inline-block;
+        overflow: hidden;
+        display: block;
+        position:relative;
         margin-top: 1.25rem;
         padding: 18px 20px;
-        border-radius: $border-radius;
         border: 1px solid $font-base;
         @media(min-width: $media-tablet) {
             text-align: initial;
             display: inline-block;
             margin-top: 2.125rem;
-        }
-        &:hover,
-        &:focus {
-            transition: 0.4s all ease-in-out;
-            background: $highlight-color;
-            border: 1px solid $primary-color;
-            color: $primary-color;
-            outline: 0;
+            &::before,
+            &::after {
+                background: #fff;
+                content: '';
+                position: absolute;
+                z-index: -1;
+            }
+            &::after {
+                background-color: $highlight-color;
+                height: 100%;
+                left: -35%;
+                top: 0;
+                transform: skew(50deg);
+                transition-duration: 0.6s;
+                transform-origin: top left;
+                width: 0;
+            }
+            &:hover:after,
+            &:focus:after {
+                height: 100%;
+                width: 135%;
+                color: $primary-color;
+            }
         }
     }
 }
@@ -53,15 +69,13 @@
         font-family: $font-text;
 
         &:hover,
-        &:focus{
-            transform: matrix(1, 0, 0, 1, 0, 0);
+        &:focus {
             outline: 0;
         }
         &:hover h2,
         &:focus h2 {
             color: $headline-base;
-            transition: 0.3s color ease;
-            transform: matrix(1.05, 0, 0, 1.05, 0, 0);
+            text-shadow: -10px 10px 0px $highlight-color;
         }
     }
     li section {
@@ -90,10 +104,11 @@
         }
     }
     li h2 {
-        transition: 0.4s transform ease-in-out;
+        transition: 0.3s text-shadow ease;
         color:$off-focus;
         font-size: 2rem;
         margin: 2rem 1rem;
+        text-shadow: none;
         cursor: pointer;
         @media (min-width: $media-tablet) {
             font-size: 10vw;
