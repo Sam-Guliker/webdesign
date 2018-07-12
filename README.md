@@ -19,8 +19,8 @@ For this topic I have to look at who the users are and create an exclusive websi
 * [Web app from scratch](#web-app-from-scratch)
     * [HyperHTML](#hyperhtml)
     * [Sass](#sass)
-    * [Learning-progres](#learning-progres)
-    * [Wish-list](#wish-list)
+    * [Learning Process](#learning-process)
+    * [Wishlist](#wish-list)
     * [Conclusion](#conclusion)
 
 # Getting Started
@@ -120,8 +120,8 @@ I'll elaborate on that in more detail in a moment.
 
 ## HyperHTML
 To make it more modular and make it look like an app,  
-I used `hyperHTML`. `HyperHTML` is a micro-lib that helps with these tasks.
-In addition, I also used the Hyperhtml app. Hyperhtml app ensures that  
+I used `hyperHTML`. [HyperHTML](https://github.com/WebReflection/hyperhtml) is a micro-lib that helps with these tasks.
+In addition, I also used the [hyperhtml-app](https://github.com/WebReflection/hyperhtml-app). Hyperhtml app ensures that  
 the routing is handled, this looks like how express does its routing.
 
 I also want to give a special thanks to [Kevin](https://github.com/kyunwang)
@@ -160,7 +160,6 @@ with helping me with indexing the data.
         hyper(document.body) `${new Introduction}`;
 
     export default Introduction 
-
     ```
 
 </details>
@@ -190,4 +189,132 @@ with helping me with indexing the data.
         </ul>
     ```
 
+</details>
+
 <details>
+    <summary>States</summary>
+    <p>States are a powerful tool to bring your app to the next level. With states you simply say a start state and the next state. You can make it more complex by adding more states if you want to.</p>
+
+    ```javascript
+
+    constructor(show) {
+        super();
+        this.setState({ show: false });
+        this.setState({ index: null });
+    }
+
+    handleChange(e, i) {
+        const { show, index } = this.state
+
+        if (show && index === i) {
+            this.setState({
+                show: !this.state.show,
+            })
+        } else if (show && index !== i) {
+            this.setState({
+                index: i
+            })
+        } else {
+            this.setState({
+                show: !this.state.show,
+                index: i
+            })
+        }
+        e.preventDefault()
+    }
+
+    ```
+
+</details>
+
+# Sass
+My scss has been structured in such a way that it is  component based.  
+I have gone so far that the media queries are also in the same rules.  
+I've noticed that applying this will make it easier to go through the files. 
+
+
+<details>
+    <summary>Sass</summary>
+
+    ```css
+        .container.list {
+            @media (min-width: $media-tablet) {
+                width: 100%;
+                margin: auto;
+            }
+            a {
+                display: block;
+                font-weight: 100;
+                transition: 0.4s all ease;
+                font-family: $font-text;
+
+                &:hover,
+                &:focus{
+                    transform: matrix(1, 0, 0, 1, 0, 0);
+                    outline: 0;
+                }
+                &:hover h2,
+                &:focus h2 {
+                    color: $headline-base;
+                    transition: 0.3s color ease;
+                    transform: matrix(1.05, 0, 0, 1.05, 0, 0);
+                }
+            }
+            li section {
+                display: block;
+                max-height: 0;
+                overflow: hidden;
+                margin:0 1em;
+                transition: (max-height 0.4s ease-out);
+                &:last-of-type {
+                    margin-bottom: 2vw;
+                }
+                @media (min-width: $media-tablet) {
+                    margin: 0 14vw;
+                }
+                @media (min-width: $media-desktop) {
+                    display: flex;
+                }
+                div {
+                    @media (min-width: $media-desktop) {
+                        max-width: 50%;
+                        margin-right: 3rem;
+                    }
+                    .context-padding {
+                        padding-top: 1rem;
+                    }
+                }
+            }
+            li h2 {
+                transition: 0.4s transform ease-in-out;
+                color:$off-focus;
+                font-size: 2rem;
+                margin: 2rem 1rem;
+                cursor: pointer;
+                @media (min-width: $media-tablet) {
+                    font-size: 10vw;
+                    margin: 14vw;
+                    margin-bottom: 2vw;
+                }
+            }
+        }
+
+    ```
+
+</details>
+
+# Learning Process
+Because hyperHTML does not have as large a community as react or  
+angular, fewer packages are available to make functionality easier.  
+I still wanted to pair APIs but it became quite complex because of the use of hyperHTML.
+
+# Wishlist
+I wanted to use the [Intersection observer api](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API), unfortunately this became quite 
+difficult by using hyperHTML.
+
+- [ ] Intersection observer API
+- [ ] CommonJS
+
+# Conclusion
+Using hyperHTML and hyperhtml-app, I raised my "modular" game.  
+I would have liked to add some APIs, but I am very satisfied with the result.
