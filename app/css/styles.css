@@ -109,6 +109,8 @@ h2 {
   overflow: hidden;
   margin: 0 1em;
   transition: max-height 0.4s ease-out; }
+  .container.list li section:last-of-type {
+    margin-bottom: 2vw; }
   @media (min-width: 48rem) {
     .container.list li section {
       margin: 0 14vw; } }
@@ -142,9 +144,6 @@ h2 {
   @media (min-width: 48rem) {
     .container.list li section.selected {
       max-height: 850px; } }
-  @media (min-width: 80rem) {
-    .container.list li section.selected {
-      max-height: 420px; } }
 
 .notSelected {
   display: none; }

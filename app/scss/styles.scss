@@ -68,6 +68,9 @@
         overflow: hidden;
         margin:0 1em;
         transition: (max-height 0.4s ease-out);
+        &:last-of-type {
+            margin-bottom: 2vw;
+        }
         @media (min-width: $media-tablet) {
             margin: 0 14vw;
         }
@@ -106,9 +109,6 @@
     max-height: 600px;
     @media (min-width: $media-tablet) {
         max-height: 850px;
-    }
-    @media (min-width: $media-desktop) {
-        max-height: 420px;
     }
 }
 

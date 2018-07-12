@@ -59,8 +59,8 @@ const data = [
         id: '9',
         name: '12. Smart organization reduces cognitive load',
         explain: 'As John Maeda says in his book Simplicity, smart organization of screen elements can make the many appear as the few. This helps people understand your interface easier and more quickly, as you\'ve illustrated the inherent relationships of content in your design.Group together like elements, show natural relationships by placement and orientation.By smartly organizing your content you make it less of a cognitive load on the user…who doesn\'t have to think about how elements are related because you\'ve done it for them.Don\'t force the user to figure things out…show them by designing those relationships into your screens.',
-        imgExplain: '../images/affordance-example.png',
-        context: ''
+        imgExplain: '../images/relation.gif',
+        context: 'Try to keep it simple and show the relationships between components and how they interact.'
     },
     {
         id: '10',
