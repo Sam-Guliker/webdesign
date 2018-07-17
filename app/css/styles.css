@@ -51,7 +51,7 @@ h2 {
   line-height: auto; }
   @media (min-width: 80rem) {
     h2 {
-      line-height: 1.2; } }
+      line-height: 1; } }
 
 * {
   padding: 0;
