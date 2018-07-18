@@ -5,7 +5,7 @@ const historyFallback = require('connect-history-api-fallback')
 const useref = require('gulp-useref')
 const uglify = require('gulp-uglify')
 const gulpIf = require('gulp-if')
-
+const concat = require('concat')
 gulp.task('sass', function () {
   return gulp.src('app/scss/**/*.scss') // Gets all files ending with .scss in app/scss
     .pipe(sass())
@@ -26,11 +26,17 @@ gulp.task('browserSync', function () {
   })
 })
 
+gulp.task('concat', function () {
+  return gulp.src('app/**/*.js')
+    .pipe(concat('app.js'))
+    .pipe(uglify())
+    .pipe(gulp.dest('./dist/'))
+});
+
 gulp.task('html', function () {
   return gulp.src('app/*.html')
     .pipe(useref())
     .pipe(gulpIf('*.js', uglify()))
-    .pipe(gulpIf('*.css', minifyCss()))
     .pipe(gulp.dest('dist'));
 })
 

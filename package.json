@@ -32,6 +32,7 @@
   },
   "dependencies": {
     "browserify": "^16.2.2",
+    "concat": "^1.0.3",
     "gulp-clean-css": "^3.9.4",
     "gulp-if": "^2.0.2",
     "gulp-sourcemaps": "^2.6.4",
