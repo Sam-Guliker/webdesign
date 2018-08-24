@@ -1,6 +1,5 @@
 {
   "presets": [
-    "env"
-  ],
-  "plugins": ["syntax-jsx"]
+    "es2015-rollup"
+  ]
 }
